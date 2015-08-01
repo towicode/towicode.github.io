@@ -10,6 +10,7 @@ Names = [
             "The R. Johnson Building",
             "Vonnegut Humanities Department.",
             "Zizek Social Sciences building",
+            "Trump Business College",
             "Twintail Urgent Care",
             "To be demolished",
             "P Garfield Chemistry Building", #10
@@ -65,6 +66,7 @@ details = [
             "Dedicated to Kurt Vonnegut, writer and humorist best known for his novel Slaughterhouse Five. Here students participate in languages, histories and many discussion-based classes designed to help them unfurl their wings as future writers, speakers and community members. ",
             "",
             "Dedicated 24/7 Urgent care. Students can be ensured that they will be in qualified medical hands while studying at NEST.",
+            "",
             "",
             "", #10
             "",
