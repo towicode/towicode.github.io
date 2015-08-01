@@ -113,7 +113,7 @@ details = [
 
 
 for x in range(0, 45):
-    html = '<form id="NAME" class="modal">\n  <div style="min-width:900px">\n    <img src="images/NUMBER.jpg" width="400px"/><br>\n    <span class="nameText"><b>PLACE</b></span>\n    <span class="detail_text">Details:</span>\n    <div class="details">DETAILS</div>\n    <a class="closer" href="images/NUMBER.jpg">Full Size</a>\n  </div>\n</form>\n'
+    html = '<form id="NAME" class="modal">\n  <div style="min-width:900px">\n    <img src="images/NUMBER.jpg" width="400px"/><br>\n    <span class="nameText"><b>PLACE</b></span><br>\n    <span class="detail_text">Details:</span>\n    <div class="details">DETAILS</div>\n    <a class="closer" href="images/NUMBER.jpg">Full Size</a>\n  </div>\n</form>\n'
     html = html.replace("NAME", "a"+str(x))
     html = html.replace("NUMBER", "temp") #str(x))
     html = html.replace("DETAILS", details[x])
