@@ -6,33 +6,33 @@
     console.log(m);
 
     var urls = [];
-    urls.push("https://www.youtube.com/watch?v=h_Aw86aUZFU");
-    urls.push("https://www.youtube.com/watch?v=PGPWGIKmPQQ");
-    urls.push("https://www.youtube.com/watch?v=J_EEZVew2Js");
-    urls.push("https://www.youtube.com/watch?v=fhY5ICi3QG4");
-    urls.push("https://www.youtube.com/watch?v=0x-Cg_8PbRQ");
-    urls.push("https://www.youtube.com/watch?v=Aai0ju9LlS4");
-    urls.push("https://www.youtube.com/watch?v=vOWFDWI9jx8");
-    urls.push("https://www.youtube.com/watch?v=x3y4ZRFH-gk");
-    urls.push("https://www.youtube.com/watch?v=sonZfhSbWeU");
-    urls.push("https://www.youtube.com/watch?v=4qi7SWKXNO8");
-    urls.push("https://www.youtube.com/watch?v=xZiY3m2fdno");
-    urls.push("https://www.youtube.com/watch?v=EeliHXNuxQI");
-    urls.push("https://www.youtube.com/watch?v=StV1nrqPiUk");
-    urls.push("https://www.youtube.com/watch?v=_hN4g1qdHfQ");
+    urls.push("https://www.youtube.com/embed/h_Aw86aUZFU");
+    urls.push("https://www.youtube.com/embed/PGPWGIKmPQQ");
+    urls.push("https://www.youtube.com/embed/J_EEZVew2Js");
+    urls.push("https://www.youtube.com/embed/fhY5ICi3QG4");
+    urls.push("https://www.youtube.com/embed/0x-Cg_8PbRQ");
+    urls.push("https://www.youtube.com/embed/Aai0ju9LlS4");
+    urls.push("https://www.youtube.com/embed/vOWFDWI9jx8");
+    urls.push("https://www.youtube.com/embed/x3y4ZRFH-gk");
+    urls.push("https://www.youtube.com/embed/sonZfhSbWeU");
+    urls.push("https://www.youtube.com/embed/4qi7SWKXNO8");
+    urls.push("https://www.youtube.com/embed/xZiY3m2fdno");
+    urls.push("https://www.youtube.com/embed/EeliHXNuxQI");
+    urls.push("https://www.youtube.com/embed/StV1nrqPiUk");
+    urls.push("https://www.youtube.com/embed/_hN4g1qdHfQ");
 
 
     var url = urls[Math.floor(Math.random() * urls.length)];
 
 
-	var iframe = '<iframe width="420" class="text" height="315" src="'+url+'" frameborder="0" allowfullscreen></iframe>';
+	var iframe = '<iframe width="420" class="text video" height="315" src="'+url+'" frameborder="0" allowfullscreen></iframe>';
 
 
 
-    if (m >= 0 && m <=31){
+    if (m >= 29 && m <=31){
     	document.write('<div class="text">It\'s Stretch Time!</div>' + iframe);
     } else {
-    	document.write('no');
+    	document.write('<div class="text">no</div>');
     }
     
 
@@ -43,9 +43,12 @@
 	margin:auto;
 	text-align: center;
 	width: 100%;
-	height: 1200 px;
 	border-width: 5px;
 	font-size: 100px;
-	padding-bottom: 800px;
+}
+
+.video {
+	width:100%;
+	height:100%;
 }
 </style>
