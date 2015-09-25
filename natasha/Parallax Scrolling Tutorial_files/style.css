@@ -1,0 +1,80 @@
+/**
+ * Parallax Scrolling Tutorial
+ * For NetTuts+
+ *  
+ * Author: Mohiuddin Parekh
+ *	http://www.mohi.me
+ * 	@mohiuddinparekh   
+ */
+
+
+body{
+	margin:0;
+	padding:0;
+}
+
+.top-gradiant {
+    background: transparent url('../images/gradient-top.png') no-repeat top center;
+    width: 1920px;
+    height: 754px;
+    position: fixed;
+    z-index: 1;
+    top: -40px;
+    left: 0px;
+}
+
+.bottom-gradient {
+    background: transparent url('../images/gradient-bottom.png') no-repeat top center;
+    width: 1920px;
+    height: 802px;
+    position: fixed;
+    z-index: 1;
+    bottom: -10px;
+    left: 0px;
+}
+
+.pane-content{
+
+    position: relative;
+    width: 980px;
+    margin: -121px auto -116px auto;
+    padding: 20px 20px;
+    min-height: 350px;
+}
+
+
+#home { 
+	background: url(../images/bg.jpg) 50% 0 no-repeat fixed; 
+	height: 4000px;  
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+#about { 
+	background: url(../images/about.jpg) 50% 0 no-repeat fixed; 
+	height: 1000px;
+	margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+p {
+    font-family: "Spiegel";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #a9bfc8;
+    line-height: 1.5em;
+}
+
+/* Introduction */
+
+#home article { height: 458px; position: absolute; top: 291px; width: 100%; }
+
+
+
+
