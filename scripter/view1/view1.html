@@ -1,0 +1,39 @@
+
+<div ng-show="parsed">
+<textarea name="paragraph_text" ng-model="script" cols="50" rows="10"></textarea>
+<br />
+<button ng-click="parse()">Parse</button>
+
+</div>
+
+<div ng-show="!parsed">
+<span class="curLine text">{{prevLine}}</span><br />
+<span class="curLine">{{currentLine}}</span> <br />
+<span class="curLine text">{{nextLine}}</span> <br />
+
+<br />
+<button ng-click="next('mas')">mas</button>
+<button ng-click="next('jad')">jad</button>
+<button ng-click="next('eva')">eva</button>
+<button ng-click="next('mas')">mas</button>
+<button ng-click="next('mas')">mas</button>
+<button ng-click="next('mas')">mas</button>
+<button ng-click="next('mas')">mas</button>
+<button ng-click="next('mas')">mas</button>
+<button ng-click="next('mas')">mas</button>
+<button ng-click="next('mas')">mas</button>
+<button ng-click="next('mas')">mas</button>
+<button ng-click="next('mas')">mas</button>
+<button ng-click="next('mas')">mas</button>
+<button ng-click="next('mas')">mas</button>
+<br/>
+
+</div>
+
+<div ng-show="!parsed" class="codebox">
+    <code>
+    	<pre>
+{{finished_script}}
+        </pre>
+    </code>
+</div>
