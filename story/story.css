@@ -1,0 +1,33 @@
+.pane-content{
+
+    position: relative;
+    width: 980px;
+    margin: -121px auto -116px auto;
+    padding: 20px 20px;
+    min-height: 350px;
+    margin-top: 200px;
+}
+
+.background {
+	background: url('../img/Meteor_Bolide.jpg');
+}
+
+.top-gradiant {
+    background: transparent url('../img/gradient-top.png') no-repeat top center;
+    width: 1920px;
+    height: 754px;
+    position: fixed;
+    z-index: 1;
+    top: -40px;
+    left: 0px;
+}
+
+.bottom-gradient {
+    background: transparent url('../img/gradient-bottom.png') no-repeat top center;
+    width: 1920px;
+    height: 802px;
+    position: fixed;
+    z-index: 1;
+    bottom: -10px;
+    left: 0px;
+}
