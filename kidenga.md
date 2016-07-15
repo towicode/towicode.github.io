@@ -6,9 +6,9 @@ You're going to end up using both (mostly the latter).
 The localhost takes less time.  While ngrok allows you to actually test it on the app/share it.
 
 You're still going to have to setup the django website, and make a user, and give yourself all of the permissions.
-If you don't know how to do that, you should first look at the `setup.py` doc and if you still can't do it ask a staffer for help ;).
+If you don't know how to do that, you should first look at the `setup.py` doc and if you still can't do maybe consider trying again.
 
-ONTO THE CONTENT!
+Here is quick guide.
 
 1. Make sure you have ngrok running.
 2. Goto the bin folder
@@ -28,6 +28,9 @@ Now you have the backend running, make sure not to close that window either, mov
 ```python kidenga.py view```
 
 
+more indepth reading
+https://ngrok.com/
+https://www.npmjs.com/package/gulp-shell
 
 
 
