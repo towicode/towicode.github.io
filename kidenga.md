@@ -28,11 +28,11 @@ Now you have the backend running, make sure not to close that window either, mov
 ```python kidenga.py view```
 
 
-!!!THIS IS BEHIND THE SCENES Kidenga.py does this all for you.!!!
 
 
-Setting up ngrok Auth for ionic upload testing
-============================
+
+The rest of this document explains the basic process of what kidenga.py does for you
+====================================================================================
 
 Run the application using ```ionic serve```
 Go to the app.js and you'll see
