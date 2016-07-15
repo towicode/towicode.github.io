@@ -13,7 +13,7 @@ The main emphasis is that this method uses a custom file called ```kidenga.py```
 
 1. Make sure you have ngrok running.
 2. Goto the bin folder
-3. type ./ngrok http 8000
+3. type ./ngrok http 8000 (FOR 64 BIT LINUX ONLY, IF YOU ARE ON MAC YOU WILL HAVE TO GOOGLE AND INSTALL NGROK)
 
 Now you have the backend running, make sure not to close that window either, move it aside
 
