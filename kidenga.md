@@ -60,7 +60,7 @@ A. if sent the view command, it will call the following gulp command
 
 This command replaces the line in ur constant.js with the ngrok server so that your mobile device can talk to your localhost
 
-B. if send the serve command, it will call the following gulp command
+B. if sent the serve command, it will call the following gulp command
 
 ```gulp reset-and-view```
 
