@@ -54,13 +54,13 @@ after it grabs your local ngrok url it checks the paramaters you sent to the kid
 
 ```python kidenga.py view```
 
-1. if sent the view command, it will call the following gulp command
+A. if sent the view command, it will call the following gulp command
 
 ```gulp view-and-upload --go <ngrok_url>```
 
 This command replaces the line in ur constant.js with the ngrok server so that your mobile device can talk to your localhost
 
-2. if send the serve command, it will call the following gulp command
+B. if send the serve command, it will call the following gulp command
 
 ```gulp reset-and-view```
 
