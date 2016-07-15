@@ -11,13 +11,20 @@ If you don't know how to do that, you should first look at the `setup.py` doc an
 ONTO THE CONTENT!
 
 1. Make sure you have ngrok running.
-  a. Goto the bin folder
-  b. type ./ngrok http 8000
+2. Goto the bin folder
+3. type ./ngrok http 8000
 
-2. To ionic serve
+Now that you have ngrok open make sure to not close that window, move it aside
+
+1. Goto your BCF src folder.
+2. Run the server by doing ```python manage.py runserver```
+
+Now you have the backend running, make sure not to close that window either, move it aside
+
+1. To ionic serve
 ```python kidenga.py serve```
 
-3. To upload to ionic view
+2. To upload to ionic view
 ```python kidenga.py view```
 
 
