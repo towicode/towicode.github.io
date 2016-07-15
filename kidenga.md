@@ -42,8 +42,11 @@ In constant.js you will see something similar to this.
 This is the line where it tells the app where to talk with the backend.
 Depending on wether or not you are trying to do Ionic View or Ionic Serve this needs to be a different URL
 
-ionic serve:   url: 'http://localhost:8100/backend'
-ionic view :   url: '<ngrok>'
+```ionic serve:   url: 'http://localhost:8100/backend'```
+
+
+
+```ionic view :   url: '<ngrok>'```
 
 It can be a pain to constantly switch between theese two so kidenga.py is a simple script that does it for you.
 
@@ -54,9 +57,11 @@ after it grabs your local ngrok url it checks the paramaters you sent to the kid
 
 ```python kidenga.py view```
 
+
 A. if sent the view command, it will call the following gulp command
 
 ```gulp view-and-upload --go <ngrok_url>```
+
 
 This command replaces the line in ur constant.js with the ngrok server so that your mobile device can talk to your localhost
 
