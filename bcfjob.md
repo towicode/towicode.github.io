@@ -1,9 +1,9 @@
-####Company Information
+#### Company Information
 
 Arizona Research Laboratories BioComputing Facility (BCF) is programming applications for science research projects. BCF is seeking student software developers to code, test, debug, and document mobile apps and web applications. 
 Help advance UA science and cutting edge projects; strengthen your skills working with a great software engineering team!
 
-####Job Description:
+#### Job Description:
 Examples of projects developed by BCF include Kidenga mosquito disease tracker (including Zika virus) http://kidenga.org and Arizona Smoker’s Helpline: https://ashline.org/. For more information, visit our website at http://bcf.arl.arizona.edu/
 You will be expected to help maintain and add additional features to these and other  applications. 
 
