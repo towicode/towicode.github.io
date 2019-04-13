@@ -6,137 +6,137 @@
 
 <div class="d-flex justify-content-between wisdom">
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       A
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       B
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       C
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       D
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       E
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       F
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       G
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       H
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       I
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       J
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       K
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       L
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       M
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       N
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       O
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       P
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       Q
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       R
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       S
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       T
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       U
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       V
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       W
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       X
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       Y
     </div>
   </div>
   <div class="p-1 draggable">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       Z
     </div>
   </div>
 <div class="p-1 clear">
-    <div class="card">
+    <div class="card" onclick="v(this)">
       &#10060;
     </div>
   </div>
@@ -146,10 +146,23 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 <script>
+
+var v = function(r){
+    // if((r.parentElement.parentElement.innerHTML).includes("z-index")){
+    //     r.remove();
+    // }
+
+    var k = r.parentElement.parentElement.className;
+    if (k.includes('droppable')){
+        r.remove();
+    }
+}
+
 $('.clear').click(function(){
 	$('.droppable').empty();
-})
+});
 
 $('.draggable').draggable({
   revert: "invalid",
