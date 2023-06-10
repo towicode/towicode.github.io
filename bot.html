@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Decompression</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.0.3/pako.min.js"></script>
+</head>
+<body>
+    <script>
+        // Assume the compressed JSON string is stored in a variable named 'compressedData'
+        var compressedData = "your-compressed-json-string";
+
+        // Decompress the compressed JSON string
+        var decompressedData = pako.inflateRaw(atob(compressedData), { to: 'string' });
+
+        // Parse the decompressed JSON string into an object
+        var jsonData = JSON.parse(decompressedData);
+
+        // Access the properties in the JSON object
+        console.log(jsonData.property1);
+        console.log(jsonData.property2);
+        // ...
+
+        // Example usage:
+        // If the JSON object has a property named 'name', you can access it like this:
+        // var nameValue = jsonData.name;
+    </script>
+</body>
+</html>
