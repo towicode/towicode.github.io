@@ -96,6 +96,11 @@
 
     <button id="addButton" class="add-button">Add New Filter</button>
 
+    <hr>
+    <h6>Click this button and it will automatically copy the code to your clip-board.</h6>
+    <h6>simply paste it into discord to update the filters.</h6>
+    <button id="copyButton">Export to Discord</button>
+
     <div id="addModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -122,19 +127,20 @@
                     <select class="form-control" id="pclass" name="pclass" multiple>
                         <option value="">All</option>
                         <!-- Add this option for deselecting -->
-                        <option value="death knight" >Death Knight</option>
-                        <option value="demon hunter" >Demon Hunter</option>
-                        <option value="druid" >Druid</option>
-                        <option value="hunter" >Hunter</option>
-                        <option value="mage" >Mage</option>
-                        <option value="monk" >Monk</option>
-                        <option value="paladin" >Paladin</option>
-                        <option value="priest" >Priest</option>
-                        <option value="rogue" >Rogue</option>
-                        <option value="shaman" >Shaman</option>
-                        <option value="warlock" >Warlock</option>
-                        <option value="warrior" >Warrior</option>
-                        <option value="evoker" >Evoker</option>                    </select>
+                        <option value="death knight">Death Knight</option>
+                        <option value="demon hunter">Demon Hunter</option>
+                        <option value="druid">Druid</option>
+                        <option value="hunter">Hunter</option>
+                        <option value="mage">Mage</option>
+                        <option value="monk">Monk</option>
+                        <option value="paladin">Paladin</option>
+                        <option value="priest">Priest</option>
+                        <option value="rogue">Rogue</option>
+                        <option value="shaman">Shaman</option>
+                        <option value="warlock">Warlock</option>
+                        <option value="warrior">Warrior</option>
+                        <option value="evoker">Evoker</option>
+                    </select>
                 </div>
 
                 <div class="form-group">
@@ -210,13 +216,10 @@
             filterData = jsonObject
         }
 
-
-
-
-
         var filterTable = document.getElementById("filterTable");
         var addButton = document.getElementById("addButton");
         var addModal = document.getElementById("addModal");
+        var copyButton = document.getElementById("copyButton");
         var closeModal = document.getElementsByClassName("close")[0];
 
         function populateTable() {
@@ -314,6 +317,19 @@
         closeModal.addEventListener("click", function () {
             addModal.style.display = "none";
         });
+
+        copyButton.addEventListener("click", function () {
+            var encoded = btoa(JSON.stringify(filterData))
+            navigator.clipboard.writeText("$$ufo:" + encoded)
+                .then(() => {
+                    console.log("Text copied to clipboard");
+                })
+                .catch((error) => {
+                    console.error("Failed to copy text: ", error);
+                });
+        });
+
+
 
         window.addEventListener("click", function (event) {
             if (event.target == addModal) {
